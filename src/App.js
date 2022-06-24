@@ -1,23 +1,36 @@
-import logo from './logo.svg';
+
 import './App.css';
+import { ImLocation} from 'react-icons/im';
+import Carousel from './components/Slider'
+import TagCard from './components/TagCard'
+import Reason from './components/Reason'
+import Feedback from './components/Feedback'
+import Testimonials from './components/Testimonials'
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+
+      <div className="navbar">
+        <div className="navbar-icon">
+          <ImLocation/>
+        </div>
+        <div className="navbar-text">
+          <h3>Bellandur, Bangalore</h3>
+        </div>
+      </div>
+      
+      <div className="header">
+        <h1>Drive and Shine</h1>
+        <h3>Car Wash</h3>
+      </div>
+
+      
+        <Carousel/>
+        <TagCard/>
+        <Reason/>
+        <Feedback/>
+        <Testimonials/>
     </div>
   );
 }
